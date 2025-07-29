@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-function Question({ question, onAnswered }) {
+export default function Question({ question, onAnswered }) {
   const [timeRemaining, setTimeRemaining] = useState(10);
 
   useEffect(() => {
@@ -41,4 +41,3 @@ function Question({ question, onAnswered }) {
   );
 }
 
-export default Question;
